@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>lightbox</title>
-  <link rel="stylesheet" href="../src/lightbox.css">
+  <link rel="stylesheet" href="src/lightbox.css">
   <style>
     body { background-color: #ccc; }
     .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: center;  width: 100%; height: 100vh;}
@@ -13,17 +13,13 @@
 </head>
 <body>
   <div class="lightbox"></div>
-
-  <div id="mainpage-container">
-    <section class="container">
-      <img src="cloud.jpg" class="image">
-      <img src="dastime.jpg" class="image">
-      <img src="feather.jpg" class="image">
-      <img src="slide.jpg" class="image">
-    </section>
-  </div>
-  
-  <script src="../src/lightbox.js"></script>
+  <section class="container">
+    <img src="example/cloud.jpg" class="image">
+    <img src="example/dastime.jpg" class="image">
+    <img src="example/feather.jpg" class="image">
+    <img src="example/slide.jpg" class="image">
+  </section>
+  <script src="src/lightbox.js"></script>
   <script>
     let lightbox = new Lightbox();
     lightbox.install(document.querySelector('.lightbox'), 'lightbox');

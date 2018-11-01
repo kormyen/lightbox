@@ -13,7 +13,6 @@ Minimal vanilla js lightbox for images
 <body>
   <div class="lightbox"></div>
   <img src="image.jpg" onclick="lightbox.load('image.jpg')">
-  </div>
   <script src="lightbox.js"></script>
   <script>
     let lightbox = new Lightbox();
