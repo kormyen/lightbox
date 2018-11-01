@@ -1,6 +1,6 @@
 Minimal vanilla js lightbox for images
 
-[**Live example**](https://kormyen.github.io/lightbox/)
+[**Live example**](https://kormyen.github.io/lightbox/index.html)
 
 <img src='PREVIEW.jpg'/>
 
