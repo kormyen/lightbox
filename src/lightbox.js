@@ -32,6 +32,11 @@ function Lightbox()
   	}
   }
 
+  this.handle = function(element, file)
+  {
+    this.addEvent(element, 'click', function(){ lightbox.load(file); });
+  }
+
   this.addEvent = function(element, evnt, funct)
   {
     if (element.attachEvent)

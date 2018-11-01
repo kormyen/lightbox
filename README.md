@@ -43,6 +43,14 @@ Minimal vanilla js lightbox for images
 
 #### Load
 ```
+<img src='image.jpg' class='image'>
+<script>
+	let image = document.querySelector(".image");
+    lightbox.handle(image, image.src);
+</script>
+```
+or
+```
 <script>
 	let image = document.createElement('img');
 	image.src = 'image.jpg';
