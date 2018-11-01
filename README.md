@@ -5,7 +5,7 @@ Minimal vanilla js lightbox for images
 <img src='PREVIEW.gif'/>
 <img src='PREVIEW.jpg' width="720" />
 
-### Other Examples
+#### Other Examples
 
 - [Memex](https://kormyen.github.io/memex/) - [repo](https://github.com/kormyen/memex)
 - [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
