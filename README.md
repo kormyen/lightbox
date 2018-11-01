@@ -31,8 +31,8 @@ Minimal vanilla js lightbox for images
 
 ```
 <script>
-	let lightbox = new Lightbox();
-	lightbox.install(container, 'prefix');
+  let lightbox = new Lightbox();
+  lightbox.install(container, 'prefix');
 </script>
 ```
 
@@ -45,25 +45,25 @@ Minimal vanilla js lightbox for images
 ```
 <img src='image.jpg' class='image'>
 <script>
-	let image = document.querySelector(".image");
-    lightbox.handle(image, image.src);
+  let image = document.querySelector(".image");
+  lightbox.handle(image, image.src);
 </script>
 ```
 or
 ```
 <script>
-	let image = document.createElement('img');
-	image.src = 'image.jpg';
-	this.addEvent(image, 'click', function(){ lightbox.load('image.jpg'); });
-	document.body.appendChild(image);
+  let image = document.createElement('img');
+  image.src = 'image.jpg';
+  this.addEvent(image, 'click', function(){ lightbox.load('image.jpg'); });
+  document.body.appendChild(image);
 </script>
 ```
 or
 ```
 <img src='image.jpg' class='image'>
 <script>
-	let image = document.querySelector(".image");
-	image.addEventListener('click', function(){ lightbox.load('image.jpg') });
+  let image = document.querySelector(".image");
+  image.addEventListener('click', function(){ lightbox.load('image.jpg') });
 </script>
 ```
 or
