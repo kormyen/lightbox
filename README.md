@@ -3,8 +3,14 @@ Minimal vanilla js lightbox for images
 [**Live example**](https://kormyen.github.io/lightbox/index.html)
 
 <img src='PREVIEW.gif'/>
+<img src='PREVIEW.jpg'/>
 
-#### Example
+### Other Examples
+
+- [Memex](https://kormyen.github.io/memex/) - [repo](https://github.com/kormyen/memex)
+- [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
+
+#### Use
 
 ```
 <head>
