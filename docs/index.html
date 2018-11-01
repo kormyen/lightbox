@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lightbox</title>
+  <link rel="stylesheet" href="../src/lightbox.css">
+  <style>
+    body { background-color: #ccc; }
+    .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: center;  width: 100%; height: 100vh;}
+    .image { height: 200px; margin: 1em; transition: all .3s ease-out ; }
+    .image:hover { box-shadow: 0px 0px 30px rgba(0,0,0,0.3); cursor: pointer; }
+</style>
+</head>
+<body>
+  <div class="lightbox"></div>
+
+  <div id="mainpage-container">
+    <section class="container">
+      <img src="cloud.jpg" class="image">
+      <img src="dastime.jpg" class="image">
+      <img src="feather.jpg" class="image">
+      <img src="slide.jpg" class="image">
+    </section>
+  </div>
+  
+  <script src="../src/lightbox.js"></script>
+  <script>
+    let lightbox = new Lightbox();
+    lightbox.install(document.querySelector('.lightbox'), 'lightbox');
+
+    let images = document.querySelectorAll(".image");
+    for (let i = 0; i < images.length; i++)
+    {
+      images[i].addEventListener('click', function(){ lightbox.load(images[i].src); }, false);
+    }
+  </script>
+</body>
+</html>
