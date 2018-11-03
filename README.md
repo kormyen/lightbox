@@ -71,3 +71,8 @@ or
 <img src="image.jpg" onclick="lightbox.load('image.jpg')">
 ```
 etc
+
+---
+
+[CC0](LISENSE)
+<img src='CC0.png'/>
