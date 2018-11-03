@@ -74,5 +74,6 @@ etc
 
 ---
 
-[CC0](LISENSE)
+[CC0](LICENSE)
+
 <img src='CC0.png'/>
