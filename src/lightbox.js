@@ -6,11 +6,7 @@ function Lightbox()
   this.install = function(container, prefix)
   {
     this.container = container;
-    
-    let back = document.createElement('div');
-    back.className = prefix + '-back';
-    this.addEvent(back, 'click', function(){ lightbox.close(); });
-    this.container.appendChild(back);
+    this.addEvent(this.container, 'click', function(){ lightbox.close(); });
 
     this.img = document.createElement('img');
     this.img.className = prefix + '-img';
