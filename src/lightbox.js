@@ -17,7 +17,10 @@ function Lightbox()
   this.load = function(file)
   {
     this.img.src = file;
-  	this.container.style.display = 'block';
+    this.container.style.display = 'block';
+    
+    // Stop main page body scrolling while lightbox is open
+    document.body.style.overflow='hidden';
   }
 
   this.close = function()
@@ -25,7 +28,10 @@ function Lightbox()
   	if (this.container.style.display != 'none')
   	{
   		this.container.style.display = 'none';
-  	}
+    }
+
+    // Enable main page body scrolling now that lightbox is closed
+    document.body.style.overflow='auto';
   }
 
   this.handle = function(element, file)
