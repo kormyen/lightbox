@@ -9,6 +9,7 @@ Minimal vanilla js lightbox for images
 
 - [Memex](https://kormyen.github.io/memex/) - [repo](https://github.com/kormyen/memex)
 - [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
+- [Sarah Tanfield's Portfolio](http://sarahtanfield.now.sh/)
 
 #### Use
 
