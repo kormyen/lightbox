@@ -90,7 +90,6 @@ function Lightbox()
       if (element == array[i].fileLocation)
       {
         return i;
-        
       }
     }
     return -1;
@@ -120,9 +119,9 @@ function Lightbox()
     document.body.style.overflow='auto';
   }
 
-  this.handle = function(element, file)
+  this.handle = function(element, file, desc, fileList)
   {
-    this.addEvent(element, 'click', function(){ lightbox.load(file); });
+    this.addEvent(element, 'click', function(){ lightbox.load(file, desc, fileList); });
   }
 
   this.addEvent = function(element, evnt, funct)

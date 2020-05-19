@@ -14,21 +14,36 @@
 <body>
   <div class="lightbox"></div>
   <section class="container">
-    <img src="example/cloud.jpg" class="image">
-    <img src="example/dastime.jpg" class="image">
-    <img src="example/feather.jpg" class="image">
-    <img src="example/slide.jpg" class="image">
+    <img src="example/cloud.jpg" class="image" id="cloud">
+    <img src="example/dastime.jpg" class="image" id="dastime">
+    <img src="example/feather.jpg" class="image" id="feather">
+    <img src="example/slide.jpg" class="image" id="slide">
   </section>
   <script src="src/lightbox.js"></script>
   <script>
     let lightbox = new Lightbox();
     lightbox.install(document.querySelector('.lightbox'), 'lightbox');
 
-    let images = document.querySelectorAll(".image");
-    for (let i = 0; i < images.length; i++)
-    {
-      lightbox.handle(images[i], images[i].src);
-    }
+    let fileList = 
+    [
+      {
+        fileLocation: "example/cloud.jpg"
+      },
+      {
+        fileLocation: "example/dastime.jpg"
+      },
+      {
+        fileLocation: "example/feather.jpg"
+      },
+      {
+        fileLocation: "example/slide.jpg"
+      }
+    ];
+
+    lightbox.handle(document.getElementById("cloud"), "example/cloud.jpg", "", fileList);
+    lightbox.handle(document.getElementById("dastime"), "example/dastime.jpg", "", fileList);
+    lightbox.handle(document.getElementById("feather"), "example/feather.jpg", "", fileList);
+    lightbox.handle(document.getElementById("slide"), "example/slide.jpg", "", fileList);
   </script>
 </body>
 </html>
